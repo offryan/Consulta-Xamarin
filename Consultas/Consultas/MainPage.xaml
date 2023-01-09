@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Consultas.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="10" BackgroundColor="#eee">
+            <Frame BackgroundColor="white"
+                   Padding="10"
+                   Margin="10"
+                   IsClippedToBounds="True" 
+                   CornerRadius="100"
+                   HorizontalOptions="Center">
+
+                <Image Source="logo.png" WidthRequest="100"/>
+            </Frame>
+            <Label Text="Cotação Dólar $" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="#242424" FontSize="25"/>
+        </StackLayout>
+
+        <StackLayout Padding="25">
+           
+ 
+            <Label Text="Compra" VerticalOptions="CenterAndExpand"/>
+            <Label Text="-" x:Name="lblCompra" FontSize="Subtitle" VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Venda" VerticalOptions="CenterAndExpand"  />
+            <Label Text="-" x:Name="lblVenda" FontSize="Subtitle" VerticalOptions="CenterAndExpand"  />
+
+            <Label Text="Variação" VerticalOptions="CenterAndExpand" />
+            <Label Text="-" x:Name="lblVariacao" FontSize="Subtitle" VerticalOptions="CenterAndExpand" />
+
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="10">
+                <Button Text="Pesquisar" x:Name="btnPesquisar" BackgroundColor="#353839"  TextColor="white" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="btnPesquisar_Clicked"/>
+
+                <Button Text="Limpar" x:Name="btnLimpar" BackgroundColor="#353839"  TextColor="white" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="btnLimpar_Clicked"/>
+
+            </StackLayout>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
